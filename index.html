@@ -61,13 +61,13 @@
     animation: grow 0.9s cubic-bezier(.2,.8,.2,1) both;
   }
   .hero-top { display: flex; align-items: center; gap: 1.3rem; margin-bottom: 1.2rem; }
-.avatar {
-  width: 128px; height: 128px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid var(--emerald);
-  flex: 0 0 auto;
-}
+  .avatar {
+    width: 128px; height: 128px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--emerald);
+    flex: 0 0 auto;
+  }
   .kicker { font-size: 0.85rem; color: var(--dim); letter-spacing: 0.02em; opacity: 0; animation: rise 0.7s 0.15s ease-out both; }
   h1 {
     font-family: 'Noto Sans JP', 'Yu Gothic', sans-serif;
@@ -112,6 +112,14 @@
   }
   .about-row .when { font-family: 'IBM Plex Mono', monospace; font-size: 0.82rem; color: var(--emerald); padding-top: 0.2rem; }
   .about-row p { margin: 0; max-width: 58ch; font-size: 0.98rem; }
+  .about-sub {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--mint);
+    margin: 2.2rem 0 0.8rem;
+    font-weight: 500;
+  }
+  .about-block:first-of-type .about-sub { margin-top: 0; }
   .projects { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1.1rem; }
   .card {
     background: var(--surface);
@@ -173,13 +181,30 @@
 
   <section id="about">
     <div class="section-head reveal"><span class="no mono">01</span><h2>経歴</h2></div>
-    <div class="about-grid">
-      <div class="about-row reveal"><span class="when">2025.10–2026.9</span><p>デロイト トーマツ コンサルティング / コンサルタント。SAP Public Cloud導入・DX支援に従事しつつ、社内サステナビリティ／ESG実践コミュニティに参加。</p></div>
-      <div class="about-row reveal"><span class="when">2024.9–2025.8</span><p>Vrije Universiteit Amsterdam / LL.M. International Business Law（Climate Change and Corporations 専攻）</p></div>
-      <div class="about-row reveal"><span class="when">2020.4–2024.3</span><p>中央大学 法学部 卒業</p></div>
-      <div class="about-row reveal"><span class="when">2022.9–2023.6</span><p>University of Sheffield / Politics and International Relations 留学</p></div>
-      <div class="about-row reveal"><span class="when">実務経験</span><p>WWF Japan、ClientEarth にてサステナビリティ情報開示・環境政策分野のインターン／業務に従事</p></div>
-      <div class="about-row reveal"><span class="when">2026</span><p>ASEFYLS（ASEF Young Leaders Summit）2026 Alumna</p></div>
+    
+    <div class="about-block">
+      <h3 class="about-sub reveal">職歴</h3>
+      <div class="about-grid">
+        <div class="about-row reveal"><span class="when">2025.10–</span><p>デロイト トーマツ コンサルティング / コンサルタント。SAP Public Cloud導入・DX支援に従事しつつ、社内サステナビリティ／ESG実践コミュニティに参加。</p></div>
+        <div class="about-row reveal"><span class="when">実務経験</span><p>WWF Japan、ClientEarth にてサステナビリティ情報開示・環境政策分野のインターン／業務に従事</p></div>
+      </div>
+    </div>
+    
+    <div class="about-block">
+      <h3 class="about-sub reveal">学歴</h3>
+      <div class="about-grid">
+        <div class="about-row reveal"><span class="when">2024.9–2025.8</span><p>Vrije Universiteit Amsterdam / LL.M. International Business Law（Climate Change and Corporations 専攻）</p></div>
+        <div class="about-row reveal"><span class="when">2020.4–2024.3</span><p>中央大学 法学部 卒業</p></div>
+        <div class="about-row reveal"><span class="when">2022.9–2023.6</span><p>University of Sheffield / Politics and International Relations 留学</p></div>
+      </div>
+    </div>
+
+    <div class="about-block">
+      <h3 class="about-sub reveal">課外活動</h3>
+      <div class="about-grid">
+        <div class="about-row reveal"><span class="when">2026</span><p>ASEFYLS（ASEF Young Leaders Summit）2026 Alumna</p></div>
+        <div class="about-row reveal"><span class="when">Climate Youth Japan</span><p>COP31に向けた勉強会（IC準備会）の企画・運営やユース向けオンラインイベントのファシリテーションに従事（詳細は下記プロジェクト参照）</p></div>
+      </div>
     </div>
   </section>
 

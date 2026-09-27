@@ -148,6 +148,19 @@
   .contact-list a:hover { color: var(--mint); border-color: var(--mint); }
   footer { color: var(--dim); font-size: 0.82rem; margin-top: 3rem; font-family: 'IBM Plex Mono', monospace; }
   a:focus-visible, button:focus-visible { outline: 2px solid var(--emerald); outline-offset: 2px; }
+  .lang-switch {
+    position: absolute;
+    top: 1.4rem; right: 1.5rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--dim);
+    text-decoration: none;
+    border: 1px solid var(--line);
+    padding: 0.3rem 0.7rem;
+    border-radius: 3px;
+    z-index: 2;
+  }
+  .lang-switch:hover { color: var(--mint); border-color: var(--emerald); }
   .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.7s ease-out, transform 0.7s ease-out; }
   .reveal.is-visible { opacity: 1; transform: translateY(0); }
   @media (prefers-reduced-motion: reduce) {
@@ -164,10 +177,12 @@
 <body>
 <div class="wrap">
 
+  <a href="en.html" class="lang-switch">EN</a>
+
   <header class="hero">
     <div>
       <div class="hero-top">
-        <img src="WhatsApp%20Image%202026-08-29%20at%2010.13.13.jpeg" alt="Futaba Tamura" class="avatar">
+        <img src="profile.jpeg" alt="Futaba Tamura" class="avatar">
         <div class="kicker mono">SUSTAINABILITY / CLIMATE POLICY / LAW</div>
       </div>
       <h1>気候変動と社会実装の<br>あいだをつなぐ。</h1>
@@ -181,21 +196,20 @@
 
   <section id="about">
     <div class="section-head reveal"><span class="no mono">01</span><h2>経歴</h2></div>
-    
-    <div class="about-block">
-      <h3 class="about-sub reveal">職歴</h3>
-      <div class="about-grid">
-        <div class="about-row reveal"><span class="when">2025.10–2026.9</span><p>デロイト トーマツ コンサルティング / コンサルタント。SAP Public Cloud導入・DX支援に従事しつつ、サステナビリティ実践コミュニティに参加。</p></div>
-        <div class="about-row reveal"><span class="when">実務経験</span><p>WWF Japan、ClientEarth にてサステナビリティ情報開示・環境政策分野のインターン／業務に従事</p></div>
-      </div>
-    </div>
-    
     <div class="about-block">
       <h3 class="about-sub reveal">学歴</h3>
       <div class="about-grid">
         <div class="about-row reveal"><span class="when">2024.9–2025.8</span><p>Vrije Universiteit Amsterdam / LL.M. International Business Law（Climate Change and Corporations 専攻）</p></div>
         <div class="about-row reveal"><span class="when">2020.4–2024.3</span><p>中央大学 法学部 卒業</p></div>
         <div class="about-row reveal"><span class="when">2022.9–2023.6</span><p>University of Sheffield / Politics and International Relations 留学</p></div>
+      </div>
+    </div>
+
+    <div class="about-block">
+      <h3 class="about-sub reveal">職歴</h3>
+      <div class="about-grid">
+        <div class="about-row reveal"><span class="when">2025.10–</span><p>デロイト トーマツ コンサルティング / コンサルタント。SAP Public Cloud導入・DX支援に従事しつつ、社内サステナビリティ／ESG実践コミュニティに参加。</p></div>
+        <div class="about-row reveal"><span class="when">実務経験</span><p>WWF Japan、ClientEarth にてサステナビリティ情報開示・環境政策分野のインターン／業務に従事</p></div>
       </div>
     </div>
 

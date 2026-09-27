@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>田村双叶 (Futaba Tamura) | 作品集官方网站</title>
+<meta name="description" content="可持续发展顾问田村双叶（Futaba Tamura）的作品集，介绍其在Nearby Finds、Climate Futures Lab与Climate Youth Japan的活动。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="田村双叶 (Futaba Tamura) | 作品集官方网站">
+<meta property="og:description" content="可持续发展顾问田村双叶（Futaba Tamura）的作品集，介绍其在Nearby Finds、Climate Futures Lab与Climate Youth Japan的活动。">
+<meta property="og:image" content="https://melanietam088.github.io/futaba-tamura/profile.jpeg">
+<meta property="og:url" content="https://melanietam088.github.io/futaba-tamura/zh.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="田村双叶 (Futaba Tamura) | 作品集官方网站">
+<meta name="twitter:description" content="可持续发展顾问田村双叶（Futaba Tamura）的作品集。">
+<meta name="twitter:image" content="https://melanietam088.github.io/futaba-tamura/profile.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0C1310;
+    --surface: #121D18;
+    --ink: #E9F2EC;
+    --dim: #7FA592;
+    --moss: #2C4A3A;
+    --emerald: #4FA37A;
+    --mint: #8FE0BA;
+    --line: rgba(233,242,236,0.14);
+  }
+  :root[data-theme="light"] {
+    --bg: #F3F6F2;
+    --surface: #FFFFFF;
+    --ink: #101A14;
+    --dim: #4C6858;
+    --moss: #CFE3D6;
+    --emerald: #2E7D5B;
+    --mint: #1F5A3F;
+    --line: rgba(16,26,20,0.14);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Noto Sans JP', 'Yu Gothic', 'Hiragino Sans', sans-serif;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    line-height: 1.75;
+    overflow-x: hidden;
+  }
+  .mono { font-family: 'IBM Plex Mono', monospace; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 4.5rem 1.5rem 6rem; }
+  header.hero {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 2rem;
+    align-items: end;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 2.8rem;
+    margin-bottom: 3.5rem;
+    position: relative;
+  }
+  header.hero::before {
+    content: "";
+    position: absolute;
+    left: 0; top: -1.2rem;
+    width: 46px; height: 3px;
+    background: var(--emerald);
+    animation: grow 0.9s cubic-bezier(.2,.8,.2,1) both;
+  }
+  .hero-top { display: flex; align-items: center; gap: 1.3rem; margin-bottom: 1.2rem; }
+  .avatar {
+    width: 128px; height: 128px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--emerald);
+    flex: 0 0 auto;
+  }
+  .kicker { font-size: 0.85rem; color: var(--dim); letter-spacing: 0.02em; opacity: 0; animation: rise 0.7s 0.15s ease-out both; }
+  h1 {
+    font-family: 'Noto Sans JP', 'Yu Gothic', sans-serif;
+    font-weight: 700;
+    font-size: clamp(2.1rem, 7vw, 3.4rem);
+    line-height: 1.5;
+    margin: 0;
+    letter-spacing: -0.01em;
+    opacity: 0;
+    animation: rise 0.8s 0.3s ease-out both;
+  }
+  .hero-side {
+    text-align: right;
+    font-size: 0.85rem;
+    color: var(--dim);
+    opacity: 0;
+    animation: rise 0.8s 0.5s ease-out both;
+  }
+  .hero-side .name { color: var(--mint); font-weight: 500; display: block; margin-bottom: 0.3rem; }
+  @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes grow { from { width: 0; } to { width: 46px; } }
+  @media (prefers-reduced-motion: reduce) {
+    header.hero::before, .kicker, h1, .hero-side { animation: none; opacity: 1; }
+  }
+  p.lede { max-width: 56ch; color: var(--dim); font-size: 1.02rem; line-height: 1.95; margin-top: 1.6rem; }
+  section { margin-bottom: 4rem; }
+  .section-head {
+    display: flex;
+    align-items: baseline;
+    gap: 0.9rem;
+    margin-bottom: 1.6rem;
+  }
+  .section-head .no { font-family: 'IBM Plex Mono', monospace; color: var(--emerald); font-size: 0.85rem; }
+  .section-head h2 { font-family: 'Noto Sans JP', 'Yu Gothic', sans-serif; font-size: 1.3rem; font-weight: 700; margin: 0; }
+  .about-grid { display: grid; grid-template-columns: 1fr; gap: 0; border-top: 1px solid var(--line); }
+  .about-row {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 1.2rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .about-row .when { font-family: 'IBM Plex Mono', monospace; font-size: 0.82rem; color: var(--emerald); padding-top: 0.2rem; }
+  .about-row p { margin: 0; max-width: 58ch; font-size: 0.98rem; }
+  .about-sub {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--mint);
+    margin: 2.2rem 0 0.8rem;
+    font-weight: 500;
+  }
+  .about-block:first-of-type .about-sub { margin-top: 0; }
+  .projects { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1.1rem; }
+  .card {
+    background: var(--surface);
+    border-left: 3px solid var(--emerald);
+    padding: 1.6rem 1.7rem;
+    grid-column: span 6;
+  }
+  .card.lead { grid-column: span 6; }
+  .card:nth-of-type(2) { grid-column: span 3; }
+  .card:nth-of-type(3) { grid-column: span 3; }
+  @media (max-width: 640px) {
+    .card, .card:nth-of-type(2), .card:nth-of-type(3) { grid-column: span 6; }
+  }
+  .card .tag { font-family: 'IBM Plex Mono', monospace; font-size: 0.78rem; color: var(--mint); display: block; margin-bottom: 0.7rem; }
+  .card h3 { font-family: 'Noto Sans JP', 'Yu Gothic', sans-serif; font-size: 1.2rem; font-weight: 700; margin: 0 0 0.6rem; }
+  .card p { margin: 0; font-size: 0.96rem; color: var(--ink); opacity: 0.92; }
+  .card-link {
+    display: inline-block;
+    margin-top: 0.9rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--mint);
+    text-decoration: none;
+    border-bottom: 1px solid var(--emerald);
+  }
+  .card-link:hover { color: var(--emerald); }
+  .contact-list { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 1rem 2rem; }
+  .contact-list a {
+    color: var(--ink);
+    text-decoration: none;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.95rem;
+    border-bottom: 1px solid var(--emerald);
+    padding-bottom: 2px;
+  }
+  .contact-list a:hover { color: var(--mint); border-color: var(--mint); }
+  footer { color: var(--dim); font-size: 0.82rem; margin-top: 3rem; font-family: 'IBM Plex Mono', monospace; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--emerald); outline-offset: 2px; }
+  .lang-switch {
+    position: absolute;
+    top: 1.4rem; right: 1.5rem;
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.78rem;
+    z-index: 2;
+  }
+  .lang-switch a, .lang-switch span.current {
+    color: var(--dim);
+    text-decoration: none;
+    border: 1px solid var(--line);
+    padding: 0.25rem 0.55rem;
+    border-radius: 3px;
+  }
+  .lang-switch span.current { color: var(--mint); border-color: var(--emerald); }
+  .lang-switch a:hover { color: var(--mint); border-color: var(--emerald); }
+  .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.7s ease-out, transform 0.7s ease-out; }
+  .reveal.is-visible { opacity: 1; transform: translateY(0); }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal, .reveal.is-visible { opacity: 1; transform: none; transition: none; }
+  }
+  @media (max-width: 480px) {
+    .wrap { padding: 3rem 1.25rem 4rem; }
+    header.hero { grid-template-columns: 1fr; }
+    .hero-side { text-align: left; }
+    .about-row { grid-template-columns: 90px 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="lang-switch">
+    <a href="index.html">JA</a><a href="en.html">EN</a><span class="current">中文</span><a href="ko.html">한국어</a><a href="nl.html">NL</a>
+  </nav>
+
+  <header class="hero">
+    <div>
+      <div class="hero-top">
+        <img src="profile.jpeg" alt="Futaba Tamura" class="avatar">
+        <div class="kicker mono">SUSTAINABILITY / CLIMATE POLICY / LAW</div>
+      </div>
+      <h1>连接气候行动与社会实践。</h1>
+      <p class="lede">拥有国际商法背景的可持续发展顾问，致力于连接企业脱碳实践与青年一代的气候政策参与。</p>
+    </div>
+    <div class="hero-side">
+      <span class="name">Futaba Tamura</span>
+      田村双葉
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="section-head reveal"><span class="no mono">01</span><h2>简历</h2></div>
+    <div class="about-block">
+      <h3 class="about-sub reveal">学历</h3>
+      <div class="about-grid">
+        <div class="about-row reveal"><span class="when">2024.9–2025.8</span><p>阿姆斯特丹自由大学（VU Amsterdam）国际商法法学硕士（气候变化与企业方向）</p></div>
+        <div class="about-row reveal"><span class="when">2020.4–2024.3</span><p>中央大学 法学学士</p></div>
+        <div class="about-row reveal"><span class="when">2022.9–2023.6</span><p>谢菲尔德大学交换生（政治学与国际关系）</p></div>
+      </div>
+    </div>
+
+    <div class="about-block">
+      <h3 class="about-sub reveal">工作经历</h3>
+      <div class="about-grid">
+        <div class="about-row reveal"><span class="when">2025.10–</span><p>德勤问东商务咨询（Deloitte Tohmatsu Consulting）顾问 — 负责SAP Public Cloud实施与企业数字化转型，同时参与公司内部可持续发展/ESG实践社区</p></div>
+        <div class="about-row reveal"><span class="when">此前</span><p>曾在WWF Japan、ClientEarth实习，专注于可持续发展信息披露与环境政策领域</p></div>
+      </div>
+    </div>
+
+    <div class="about-block">
+      <h3 class="about-sub reveal">课外活动</h3>
+      <div class="about-grid">
+        <div class="about-row reveal"><span class="when">2026</span><p>ASEFYLS（ASEF青年领袖峰会）2026届校友</p></div>
+        <div class="about-row reveal"><span class="when">Climate Youth Japan</span><p>负责组织COP31学习会并主持青年线上活动（详情见下方项目）</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="section-head reveal"><span class="no mono">02</span><h2>参与的项目</h2></div>
+    <div class="projects">
+      <div class="card lead reveal">
+        <span class="tag">FOUNDER & CEO</span>
+        <h3>Nearby Finds</h3>
+        <p>正在开发一款连接理性消费者与日本本地可持续商店的应用。入围ClimateLaunchpad 2026日本总决赛，并获得Shibuya QWS奖。</p>
+        <a href="https://shibuya-qws.com/project/nearby-finds" target="_blank" rel="noopener" class="card-link">阅读SHIBUYA QWS的报道 →</a>
+      </div>
+      <div class="card reveal">
+        <span class="tag">LEAD TRAINER</span>
+        <h3>Climate Futures Lab</h3>
+        <p>面向18～30岁人群的一日参与式工作坊，通过系统思维与未来思维探索2050年日本的可能未来。2026年11月1日，于涉谷QWS免费举办。</p>
+        <!-- SIGNUP_LINK_PLACEHOLDER: 报名链接确定后在此添加 <a href="URL" target="_blank" rel="noopener" class="card-link">点击报名 →</a> -->
+      </div>
+      <div class="card reveal">
+        <span class="tag">CLIMATE YOUTH JAPAN</span>
+        <h3>COP31学习与筹备</h3>
+        <p>组织COP31学习会，并主持"Youth Movement"线上活动。以气候资金与减缓工作计划（MWP）为重点追踪谈判动态。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="section-head reveal"><span class="no mono">03</span><h2>联系方式</h2></div>
+    <ul class="contact-list reveal">
+      <li><a href="mailto:f.tamura88@gmail.com">f.tamura88@gmail.com</a></li>
+      <li><a href="https://www.linkedin.com/in/futaba-tamura-648901282" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+    <footer>© 2026 Futaba Tamura</footer>
+  </section>
+
+</div>
+<script>
+  (function () {
+    var els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) {
+      els.forEach(function (el) { el.classList.add('is-visible'); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+    els.forEach(function (el, i) {
+      el.style.transitionDelay = (i % 6) * 0.06 + 's';
+      io.observe(el);
+    });
+  })();
+</script>
+</body>
+</html>

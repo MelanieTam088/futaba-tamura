@@ -171,16 +171,22 @@
   .lang-switch {
     position: absolute;
     top: 1.4rem; right: 1.5rem;
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 0.8rem;
+    font-size: 0.78rem;
+    z-index: 2;
+  }
+  .lang-switch a, .lang-switch span.current {
     color: var(--dim);
     text-decoration: none;
     border: 1px solid var(--line);
-    padding: 0.3rem 0.7rem;
+    padding: 0.25rem 0.55rem;
     border-radius: 3px;
-    z-index: 2;
   }
-  .lang-switch:hover { color: var(--mint); border-color: var(--emerald); }
+  .lang-switch span.current { color: var(--mint); border-color: var(--emerald); }
+  .lang-switch a:hover { color: var(--mint); border-color: var(--emerald); }
   .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.7s ease-out, transform 0.7s ease-out; }
   .reveal.is-visible { opacity: 1; transform: translateY(0); }
   @media (prefers-reduced-motion: reduce) {
@@ -197,7 +203,9 @@
 <body>
 <div class="wrap">
 
-  <a href="en.html" class="lang-switch">EN</a>
+  <nav class="lang-switch">
+    <span class="current">JA</span><a href="en.html">EN</a><a href="zh.html">中文</a><a href="ko.html">한국어</a><a href="nl.html">NL</a>
+  </nav>
 
   <header class="hero">
     <div>

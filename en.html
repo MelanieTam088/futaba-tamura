@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Futaba Tamura | Portfolio & Official Site</title>
-<meta name="description" content="Portfolio of Futaba Tamura, a sustainability consultant working on Nearby Finds, Climate Futures Lab, and Climate Youth Japan.">
+<title>Futaba Tamura | Portfolio & Officiële Site</title>
+<meta name="description" content="Portfolio van Futaba Tamura, een sustainability consultant die werkt aan Nearby Finds, Climate Futures Lab en Climate Youth Japan.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Futaba Tamura | Portfolio & Official Site">
-<meta property="og:description" content="Portfolio of Futaba Tamura, a sustainability consultant working on Nearby Finds, Climate Futures Lab, and Climate Youth Japan.">
+<meta property="og:title" content="Futaba Tamura | Portfolio & Officiële Site">
+<meta property="og:description" content="Portfolio van Futaba Tamura, een sustainability consultant die werkt aan Nearby Finds, Climate Futures Lab en Climate Youth Japan.">
 <meta property="og:image" content="https://melanietam088.github.io/futaba-tamura/profile.jpeg">
-<meta property="og:url" content="https://melanietam088.github.io/futaba-tamura/en.html">
+<meta property="og:url" content="https://melanietam088.github.io/futaba-tamura/nl.html">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Futaba Tamura | Portfolio & Official Site">
-<meta name="twitter:description" content="Portfolio of Futaba Tamura, a sustainability consultant.">
+<meta name="twitter:title" content="Futaba Tamura | Portfolio & Officiële Site">
+<meta name="twitter:description" content="Portfolio van Futaba Tamura, sustainability consultant.">
 <meta name="twitter:image" content="https://melanietam088.github.io/futaba-tamura/profile.jpeg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -171,16 +171,22 @@
   .lang-switch {
     position: absolute;
     top: 1.4rem; right: 1.5rem;
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 0.8rem;
+    font-size: 0.78rem;
+    z-index: 2;
+  }
+  .lang-switch a, .lang-switch span.current {
     color: var(--dim);
     text-decoration: none;
     border: 1px solid var(--line);
-    padding: 0.3rem 0.7rem;
+    padding: 0.25rem 0.55rem;
     border-radius: 3px;
-    z-index: 2;
   }
-  .lang-switch:hover { color: var(--mint); border-color: var(--emerald); }
+  .lang-switch span.current { color: var(--mint); border-color: var(--emerald); }
+  .lang-switch a:hover { color: var(--mint); border-color: var(--emerald); }
   .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.7s ease-out, transform 0.7s ease-out; }
   .reveal.is-visible { opacity: 1; transform: translateY(0); }
   @media (prefers-reduced-motion: reduce) {
@@ -197,7 +203,9 @@
 <body>
 <div class="wrap">
 
-  <a href="index.html" class="lang-switch">日本語</a>
+  <nav class="lang-switch">
+    <a href="index.html">JA</a><a href="en.html">EN</a><a href="zh.html">中文</a><a href="ko.html">한국어</a><span class="current">NL</span>
+  </nav>
 
   <header class="hero">
     <div>
@@ -205,8 +213,8 @@
         <img src="profile.jpeg" alt="Futaba Tamura" class="avatar">
         <div class="kicker mono">SUSTAINABILITY / CLIMATE POLICY / LAW</div>
       </div>
-      <h1>Connecting climate action<br>to real-world implementation.</h1>
-      <p class="lede">Sustainability consultant with a background in international business law, working at the intersection of corporate decarbonization and youth climate policy engagement.</p>
+      <h1>Klimaatactie verbinden met de praktijk.</h1>
+      <p class="lede">Sustainability consultant met een achtergrond in internationaal ondernemingsrecht, werkzaam op het snijvlak van bedrijfsmatige decarbonisatie en betrokkenheid van jongeren bij klimaatbeleid.</p>
     </div>
     <div class="hero-side">
       <span class="name">Futaba Tamura</span>
@@ -215,52 +223,52 @@
   </header>
 
   <section id="about">
-    <div class="section-head reveal"><span class="no mono">01</span><h2>Background</h2></div>
+    <div class="section-head reveal"><span class="no mono">01</span><h2>Achtergrond</h2></div>
     <div class="about-block">
-      <h3 class="about-sub reveal">Education</h3>
+      <h3 class="about-sub reveal">Opleiding</h3>
       <div class="about-grid">
-        <div class="about-row reveal"><span class="when">2024.9–2025.8</span><p>LL.M. in International Business Law, Vrije Universiteit Amsterdam (concentration in Climate Change and Corporations)</p></div>
-        <div class="about-row reveal"><span class="when">2020.4–2024.3</span><p>LL.B., Chuo University, Faculty of Law</p></div>
-        <div class="about-row reveal"><span class="when">2022.9–2023.6</span><p>Exchange, University of Sheffield — Politics and International Relations</p></div>
+        <div class="about-row reveal"><span class="when">2024.9–2025.8</span><p>LL.M. International Business Law, Vrije Universiteit Amsterdam (specialisatie Climate Change and Corporations)</p></div>
+        <div class="about-row reveal"><span class="when">2020.4–2024.3</span><p>LL.B., Chuo University, Faculteit Rechten</p></div>
+        <div class="about-row reveal"><span class="when">2022.9–2023.6</span><p>Uitwisseling, University of Sheffield — Politics and International Relations</p></div>
       </div>
     </div>
 
     <div class="about-block">
-      <h3 class="about-sub reveal">Work Experience</h3>
+      <h3 class="about-sub reveal">Werkervaring</h3>
       <div class="about-grid">
-        <div class="about-row reveal"><span class="when">2025.10–</span><p>Consultant, Deloitte Tohmatsu Consulting — SAP Public Cloud implementation and enterprise digital transformation, alongside the internal sustainability/ESG practice community</p></div>
-        <div class="about-row reveal"><span class="when">Earlier</span><p>Internships at WWF Japan and ClientEarth, focused on sustainability disclosure and environmental policy</p></div>
+        <div class="about-row reveal"><span class="when">2025.10–</span><p>Consultant, Deloitte Tohmatsu Consulting — implementatie van SAP Public Cloud en digitale transformatie, naast de interne sustainability/ESG-praktijkgemeenschap</p></div>
+        <div class="about-row reveal"><span class="when">Eerder</span><p>Stages bij WWF Japan en ClientEarth, gericht op sustainability disclosure en milieubeleid</p></div>
       </div>
     </div>
 
     <div class="about-block">
-      <h3 class="about-sub reveal">Extracurricular</h3>
+      <h3 class="about-sub reveal">Nevenactiviteiten</h3>
       <div class="about-grid">
         <div class="about-row reveal"><span class="when">2026</span><p>ASEFYLS (ASEF Young Leaders Summit) 2026 Alumna</p></div>
-        <div class="about-row reveal"><span class="when">Climate Youth Japan</span><p>Organizing COP31 study sessions and facilitating youth-focused online events (see project below for details)</p></div>
+        <div class="about-row reveal"><span class="when">Climate Youth Japan</span><p>Organiseert studiesessies voor COP31 en begeleidt online evenementen voor jongeren (zie project hieronder voor details)</p></div>
       </div>
     </div>
   </section>
 
   <section id="projects">
-    <div class="section-head reveal"><span class="no mono">02</span><h2>Projects</h2></div>
+    <div class="section-head reveal"><span class="no mono">02</span><h2>Projecten</h2></div>
     <div class="projects">
       <div class="card lead reveal">
         <span class="tag">FOUNDER & CEO</span>
         <h3>Nearby Finds</h3>
-        <p>Building an app connecting conscious consumers with sustainability-focused local shops in Japan. Japan Finalist in ClimateLaunchpad 2026, and winner of a Shibuya QWS Award.</p>
-        <a href="https://shibuya-qws.com/project/nearby-finds" target="_blank" rel="noopener" class="card-link">Read the SHIBUYA QWS feature →</a>
+        <p>Bouwt een app die bewuste consumenten verbindt met lokale, duurzame winkels in Japan. Japan Finalist bij ClimateLaunchpad 2026, en winnaar van een Shibuya QWS Award.</p>
+        <a href="https://shibuya-qws.com/project/nearby-finds" target="_blank" rel="noopener" class="card-link">Lees het SHIBUYA QWS-artikel →</a>
       </div>
       <div class="card reveal">
         <span class="tag">LEAD TRAINER</span>
         <h3>Climate Futures Lab</h3>
-        <p>A one-day participatory workshop for ages 18–30 exploring possible futures for Japan in 2050, using systems and futures thinking. Free, November 1, 2026, at Shibuya QWS.</p>
-        <!-- SIGNUP_LINK_PLACEHOLDER: add <a href="URL" target="_blank" rel="noopener" class="card-link">Register here →</a> once the sign-up link is ready -->
+        <p>Een eendaagse participatieve workshop voor 18–30 jarigen over mogelijke toekomstscenario's voor Japan in 2050, met systeem- en toekomstdenken. Gratis, 1 november 2026, bij Shibuya QWS.</p>
+        <!-- SIGNUP_LINK_PLACEHOLDER: voeg <a href="URL" target="_blank" rel="noopener" class="card-link">Meld je aan →</a> toe zodra de link bekend is -->
       </div>
       <div class="card reveal">
         <span class="tag">CLIMATE YOUTH JAPAN</span>
-        <h3>COP31 Study & Preparation</h3>
-        <p>Organizing study sessions and facilitating the "Youth Movement" online event ahead of COP31. Tracking negotiation developments with a focus on climate finance and the Mitigation Work Programme (MWP).</p>
+        <h3>COP31-voorbereiding</h3>
+        <p>Organiseert studiesessies en begeleidt het online evenement "Youth Movement" voorafgaand aan COP31. Volgt onderhandelingen met focus op klimaatfinanciering en het Mitigation Work Programme (MWP).</p>
       </div>
     </div>
   </section>
